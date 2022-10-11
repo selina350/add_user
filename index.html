@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>Learning the Forms</title>
+    </head>
+    <body>
+        <h1>Hello, Forms!</h1>
+        <form action="/form-handling-url" method="post">
+            <fieldset>
+                <legend>Add user</legend>
+                <div>
+                   <lable for="firstName">First name</lable>
+                   <input type="text" id="firstName" name="first_name">
+                </div>
+
+                <div>
+                    <lable for="lastName">Last name</lable>
+                    <input type="text" id="lastName" name="last_name">
+                </div>
+
+                <div>
+                    <lable for="email">Email</lable>
+                    <input type="email" id="email" name="email_address">
+                </div>
+
+                <div>
+                    <lable for="status">Status</lable>
+                    <select id="status" name="user_role_name">
+                        <option value="student">Student</option>
+                        <option value="instructor">Instructor</option>
+                        <option value="guest">Guest</option>
+                    </select>
+                </div>
+
+                <div>
+                    <p>Choose your favorite programming language:</p>
+                </div>
+
+                <div>
+                    <input type="radio" id="html" name="HTML" value="HTML">
+                    <lable for="html">HTML</lable>
+                </div>
+
+                <div>
+                    <input type="radio" id="css" name="CSS" value="CSS">
+                    <lable for="css">CSS</lable>
+                </div>
+
+                <div>
+                    <input type="radio" id="javascript" name="JavaScript" value="JavaScript">
+                    <lable for="javascript">JavaScript</lable>
+                </div>
+
+                <div>
+                    <lable for="bio">Comments</lable>
+                    <textarea id="bio" name="bio"></textarea>
+                </div>
+
+                <div>
+                    <lable for="expiration">Current Date</lable>
+                    <input type="date" id="expiration" name="expiration">
+                </div>
+
+                <div>
+                    <input type="checkbox" id="signUpForNewsletter" name="sign_up_for_newsletter" value="SignUpForNewsletter">
+                    <lable for="signUpForNewsletter">Sign Up For Newsletter</lable>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="agreeToTermsAndConditions" name="agree_to_terms" value="AgreeToTerms">
+                    <lable for="agreeToTermsAndConditions">Agree to terms</lable>
+                </div>
+
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
+            </fieldset>
+        </form>
+    </body>
+</html>
